@@ -1,0 +1,12 @@
+.idea/
+.vs/
+obj/
+bin/
+*.user
+
+/Model/CodeG.lck
+/Model/CodeG.log
+
+# SonarQube
+.sonar/
+.scannerwork/
