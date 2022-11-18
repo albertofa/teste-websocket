@@ -1,0 +1,15 @@
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\bin\Debug\net6.0\ServidorWebsocket.exe
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\bin\Debug\net6.0\ServidorWebsocket.deps.json
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\bin\Debug\net6.0\ServidorWebsocket.runtimeconfig.json
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\bin\Debug\net6.0\ServidorWebsocket.dll
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\bin\Debug\net6.0\ServidorWebsocket.pdb
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.csproj.AssemblyReference.cache
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.AssemblyInfoInputs.cache
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.AssemblyInfo.cs
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.csproj.CoreCompileInputs.cache
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.dll
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\refint\ServidorWebsocket.dll
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.pdb
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ServidorWebsocket.genruntimeconfig.cache
+C:\Projects\bootcamp\ServidorWebsocket\ServidorWebsocket\obj\Debug\net6.0\ref\ServidorWebsocket.dll
