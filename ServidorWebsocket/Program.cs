@@ -9,7 +9,7 @@ await Task.Delay(1000);
 ClientWebSocket _clientWs = new ();
 
 var token = new CancellationToken();
-await _clientWs.ConnectAsync(new Uri("ws://localhost:8380"), token);
+await _clientWs.ConnectAsync(new Uri("ws://10.1.5.46:80"), token);
 
 var teste = "echo echo 2";
 var testeBytes = Encoding.UTF8.GetBytes(teste);
