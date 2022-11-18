@@ -1,6 +1,8 @@
 ﻿using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Net;
 using System.Net.WebSockets;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace ServidorWebsocket;
@@ -14,7 +16,8 @@ public class Server
     public Server()
     {
         _listener = new HttpListener();
-        _listener.Prefixes.Add("http://localhost:80/");
+        
+        _listener.Prefixes.Add("http://*:80/");
         
         _listener.Start();
         
