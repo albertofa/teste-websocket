@@ -57,14 +57,13 @@ public class Server
                     {
                         var wsContext = await ctx.AcceptWebSocketAsync(subProtocol: null);
 
-                        var ip = ctx.Request.RemoteEndPoint.Address.ToString() +
-                                 ctx.Request.RemoteEndPoint.Port.ToString();
+                        var ip = ctx.Request.RemoteEndPoint.Address + ":" + ctx.Request.RemoteEndPoint.Port;
                         Console.WriteLine("Connection established " + ip);
                         var ws = wsContext.WebSocket;
-
+                        
                         Connections.TryAdd(ip, ws);
                         
-                        _ = Task.Run(() => ReadAndEcho(ws, token), tokenSource.Token);
+                        _ = Task.Run(() => ReadAndEcho(ws, token, ip), tokenSource.Token);
                     }
                     catch (Exception e)
                     {
@@ -77,7 +76,7 @@ public class Server
         }
     }
 
-    private async Task ReadAndEcho(WebSocket ws, CancellationToken token)
+    private async Task ReadAndEcho(WebSocket ws, CancellationToken token, string ip)
     {
         var buffer = new byte[65536];
 
@@ -85,9 +84,11 @@ public class Server
         {
             var bytes = await ReceiveMessage(ws, token, buffer);
 
+            var echoed = $"[{ip}] {Encoding.UTF8.GetString(bytes.ToArray())}";
+            
             if (bytes != null)
             {
-                await ws.SendAsync(bytes, WebSocketMessageType.Text, true, token).ConfigureAwait(false);
+                await ws.SendAsync(Encoding.UTF8.GetBytes(echoed), WebSocketMessageType.Text, true, token).ConfigureAwait(false);
                 Console.WriteLine("Echoed message");
             }
             else
